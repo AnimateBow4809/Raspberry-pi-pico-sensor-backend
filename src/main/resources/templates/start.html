@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="">
+<head>
+  <title>Title</title>
+</head>
+<body>
+<div>room myData . Passed parameter : <span th:text="${myData.getTemp()}"></span></div>
+<div>room humidity . Passed parameter : <span th:text="${myData.getHumidity()}"></span></div>
+<script>
+  setInterval(function() {
+    location.reload();
+  }, 1000);
+</script>
+</body>
+</html>
